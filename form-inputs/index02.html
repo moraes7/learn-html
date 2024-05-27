@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- MÉTODO GET E POST -->  
+    <h1>Formulário</h1>
+    <h2>Método GET</h2>
+   <form action="cadastro.php" method="get"> <!-- método get é o padrão -->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!-- utilizando label -->
+
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p>Senha: <input type="password" name="senha" id=""></p>
+
+        <p><input type="submit" value="Entrar"></p>
+   </form>
+   
+   <h2>Método POST</h2>
+   <form action="cadastro.php" method="post"> <!-- post não mostra os dados enviados na url -->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!-- utilizando label -->
+
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p>Senha: <input type="password" name="senha" id=""></p>
+
+        <p><input type="submit" value="Entrar"></p>
+   </form>
+</body>
+</html>
