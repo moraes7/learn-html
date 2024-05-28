@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulário com campos obrigatórios</h2>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusuario">Usuário: </label>
+            <input type="text" name="usuario" id="iusuario" required> <!-- required = campo obrigatório-->
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <h2>Formulário com mínimo e máximo de caracteres e tamanho</h2>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusuario">Usuário: </label>
+            <input type="text" name="usuario" id="iusuario" minlength="5" maxlength="15" size="10"> <!-- mínimo e máximo de caracteres -->
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="10"> <!-- size para o tamanho da caixa-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <h2>Formulário com placeholder</h2>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusuario"></label>
+            <input type="text" name="usuario" id="iusuario" placeholder="Usuário" minlength="5" maxlength="15" size="20"> <!-- mínimo e máximo de caracteres -->
+        </p>
+        <p>
+            <label for="isenha"></label>
+            <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="8" maxlength="20" size="20">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
