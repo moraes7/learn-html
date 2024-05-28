@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <h2>select, datalist e textarea</h2>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="itime">Times de futebol: </label>
+        <select name="time" id="itime">
+            <option value="" selected>--- Escolha ---</option>
+            <optgroup label="SP">
+                <option value="SEP">Palmeiras</option>
+                <option value="SCCP">Corinthians</option>
+                <option value="SPFC">São Paulo</option>
+                <option value="SFC">Santos</option>
+            </optgroup>
+            <optgroup label="RJ">
+                <option value="CRVG">Vasco</option>
+                <option value="CRF">Flamengo</option>
+                <option value="FFC">Fluminense</option>
+                <option value="BFC">Botafogo</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="itime">Procure o seu time por região: </label>
+            <input type="text" name="time" id="itime" list="srctime">
+            <datalist id="srctime">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
